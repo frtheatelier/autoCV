@@ -67,7 +67,7 @@
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
-\usepackage{tabularx}
+%\usepackage{tabularx}
 \newlength{\fullcollw}
 \setlength{\fullcollw}{0.47\textwidth}
 
@@ -170,6 +170,37 @@ I am a computer science student with a deep love for design and development. My 
 % \item long long line of blah blah that will wrap when the table fills the column width
 % \item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
 % \end{joblong}
+
+%----------------------------------------------------------------------------------------
+%	Qualifications
+%----------------------------------------------------------------------------------------
+\section{Qualifications}
+\begin{itemize}
+    \item Second-year student in the Computer Science Specialist program, also majoring in Mathematics and minoring in Philosophy at the University of Toronto
+    \item Excellent collaborative skills, demonstrated through a team hackathon project "Capybara Bash" and as an event planner of the event "Nourish and Recharge: Decorate a Tote-bag Over Lunch".
+    \item ~2 years in community engagement and leadership, particularly as a tour guide and mentor.
+    \item Solid understanding in HTML, CSS, and Javascript, showcased by a number of front-end side projects.
+    \item Practical back-end knowledge using PHP and MySQL, including building systems with user authentication and CRUD functionality.
+    \item Experience in rapid prototyping and game development using Godot 4.3 and JavaScript, showcasing teamwork and problem-solving in fast-paced environments.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    2024 - present & Honors Bachelor of Science at \textbf{University of Toronto} \hfill \normalsize (GPA: 3.84/4.0) \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+%\section{Skills}
+%\begin{tabularx}{\linewidth}{@{}l X@{}}
+%    Proficient &  \normalsize{Python, HTML, CSS, JavaScript, PHP, MySQL}\\
+%    Familiar  &  \normalsize{C++, GoLang, Laravel, Vue.js, Swift UI, Godot (GDScript)}\\
+%    Other  &  \normalsize{UI/UX design}\\
+%\end{tabularx}
   
 %Projects
 \section{Projects}
@@ -177,22 +208,17 @@ I am a computer science student with a deep love for design and development. My 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Personal site} & \hfill \href{https://frtheatelier.github.io/dashboard/}{Link to Page} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
-    Skills: HTML, CSS, JavaScript
-    \begin{itemize}
-        \item Designed and developed a visually engaging personal website with custom UI concepts and hand-drawn artwork, showcasing various artistic works and programming projects
-        \item Skills: UI/UX design, self-evaluation, project planning, research skills for design ideas and animation, practice ai assisted coding (e.g. brainstorming ideas, troubleshooting)
-    \end{itemize}
+    Created a personal website with a clean and creative user interface using HTML, CSS, and Javascript to showcase various artistic works and programming projects
 }  \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Aléatoire: Varied Web Apps} & \hfill \href{https://frtheatelier.github.io/aleatoire/}{Link to Hub} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
-    Skills: HTML, CSS, JavaScript (jQuery, vue)
     \begin{itemize}
-        \item Incorporating mathematical concepts learnt from lectures into something fun or engaging (e.g. Caesar’s cipher)
-        \item Designed a simplistic yet pleasing interface that is straightforward and user-friendly
-        \item Skills: Creative thinking, technical skills, translating learnt material into a viable game
+        \item Built multiple web apps using JavaScript, jQuery, Vue, and Ajax to explore front-end technologies, including a calculator and Wikipedia article generator.
+        \item Created a math-based web tool to identify perfect numbers and their factors, enhancing user engagement with number theory.
+        \item Developed an interactive Caesar Cipher mini-game applying cryptographic concepts through JavaScript logic.
     \end{itemize}
 }  \\
 \end{tabularx}
@@ -200,38 +226,26 @@ I am a computer science student with a deep love for design and development. My 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Restaurant menu and booking portal} & \hfill \href{https://puedeeducation.com/kimresto/index.php}{Link to Demo}\footnote{Demo login: username \texttt{vani}, password \texttt{12345}. No real data; for demonstration purposes only.} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
-    Skills: PHP, CSS, JavaScript, MySQL
-    \begin{itemize}
-        \item Simulated a restaurant menu and booking system with a login interface as an extracurricular course project
-        \item Skills: Reading documentation, problem solving, integrating database into website
-    \end{itemize}
+    Developed a restaurant menu and booking system with login, CRUD functionality, and Bootstrap styling using PHP and MySQL as part of a web development course project; successfully published on the course website.
 }  \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Capybara Bash} & \hfill \href{https://github.com/harshshriv8man/Capybara-Bash-Game}{Link to Prototype} \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
-    Skills: Godot
-    \begin{itemize}
-        \item A simple 2D platformer game with moving platforms built in Godot 4.3 for NewHacks 2024 featuring a cute capybara. 
-        \item Coded the base logic and win-lose mechanics
-        \item Presented project to a panel of judges
-        \item Skills: Reading documentation, self-learning, verbal communication, presentation skills, game development
-    \end{itemize}
+    Collaborated in a team of three to design and develop a visually engaging 2D platformer game prototype featuring a capybara and moving platforms using Godot 4.3 to be presented to judges at IEEE's NewHacks 2024
 }  \\
 \end{tabularx}
 
-Course Projects
+%Course Projects
 \section{Course Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{"Where are my Items": a text-based adventure game} & \hfill \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
-    Skills: Python
     \begin{itemize}
-        \item Utilized data structures and appropriate coding styles to create a functional text-based adventure game with 3 different minigames, 1 extra puzzle, 2 easter-eggs and other gimmicks
-        \item Wrote detailed documentation detailing walkthroughs, items and puzzles and a reflective piece on difficulties faced and puzzle complexity
-        \item Skills: Self-evaluation, time management, project planning and outlining tasks
+        \item Developed a functional text-based adventure game in Python featuring three minigames, one puzzle, two easter-eggs, and additional interactive elements using appropriate data structures and coding practices
+        \item Authored comprehensive documentation including a game walkthrough, item and puzzle descriptions, and a reflective analysis of challenges and puzzle complexity
     \end{itemize}
 }  \\
 \end{tabularx}
@@ -242,21 +256,16 @@ Course Projects
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Fall Campus Day Tour Guide} & Oct 2024\hfill \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
-    \begin{itemize}
-        \item Guided prospective students and their families around the Bahen Centre in University of Toronto St. George
-        \item Gave insight into the first-year student experience in a CS course
-        \item Encourage questions and focus on effective communication
-    \end{itemize}
+    Led tours for groups of 10+ prospective students and families around the Bahen Centre, sharing insights on first-year courses and student life while encouraging engagement; consistently delivered on-time tours and received positive feedback from participants.
 }  \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Event Coordinator} & Mar 2025\hfill \\[3.75pt]
+\textbf{Event Coordinator} & Nov 2024 - Mar 2025\hfill \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
     \begin{itemize}
-        \item Organized a creative and relaxing lunch event with around 40 attendees
-        \item Planned and delivered a short presentation, managed art supplies, and coordinated with other organizers.
-        \item Strengthened event planning and leadership skills.
+        \item Organized and co-hosted "Nourish and Recharge: Decorate a Tote-bag Over Lunch" in collaboration with UofT’s Center of International Experience, successfully engaging ~40 attendees
+        \item Planned and delivered a short presentation on self-care and study strategies, fostering a warm and welcoming event atmosphere.
     \end{itemize}
 }  \\
 \end{tabularx}
@@ -265,9 +274,8 @@ Course Projects
 \textbf{CSSU Orientation Leader} & Sep 2025\hfill \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
     \begin{itemize}
-        \item Guided 6 students across the scavenger hunt held during the orientation
-        \item Encourage member participation in a poster designing activity and shared design ideas
-        \item Answered questions and provided insights to first year regarding course activities and opportunities on later years.
+        \item Led a scavenger hunt guiding 6 students, fostering engagement through collaborative poster design activities and finished in 3rd place.
+        \item Provided informative answers about course activities and opportunities, enhancing first-year students’ orientation experience.
     \end{itemize}
 }  \\
 \end{tabularx}
@@ -276,19 +284,10 @@ Course Projects
 \textbf{PERMIKATO X VIP Toronto Buddy} & Sep 2025 - present\hfill \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
     \begin{itemize}
-        \item Acted as a 'buddy' or mentor to 2 first year students of UofT
-        \item Initiated conversation with mentees, provide suggestions on local supermarkets and notify them for any social event
-        \item Answered questions related to program application and life as a university student
+        \item Mentored 2 first-year UofT students, initiating conversations and offering guidance on local resources and social events.
+        \item Answered questions about program applications and university life to support mentees’ transition.
     \end{itemize}
 }  \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2024 - present & Honors Bachelor of Science at \textbf{University of Toronto} \hfill \normalsize (GPA: 3.84/4.0) \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -299,16 +298,6 @@ Course Projects
 % \nocite{*}
 % \printbibliography[heading=none]
 % \end{refsection}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Proficient &  \normalsize{Python, HTML, CSS, JavaScript, PHP, MySQL}\\
-Familiar  &  \normalsize{C++, GoLang, Laravel, Vue.js, Swift UI, Godot (GDScript)}\\ 
-Other  &  \normalsize{UI/UX design}\\  
-\end{tabularx}
 
 \vfill
 \center{\footnotesize Last updated: \today}
