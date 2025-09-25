@@ -48,7 +48,7 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip}
+\usepackage{parskip} 	
 
 %other packages for formatting
 \RequirePackage{color}
@@ -63,7 +63,7 @@
 \usepackage{enumitem}
 
 % centered version of 'X' col. type
-\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
@@ -72,11 +72,11 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}
+\usepackage{titlesec}				
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by:
+%CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
@@ -100,26 +100,26 @@
 
 % job listing environments
 \newenvironment{jobshort}[2]
-{
+    {
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
     \textbf{#1} & \hfill &  #2 \\[3.75pt]
     \end{tabularx}
-}
-{
-}
+    }
+    {
+    }
 
 \newenvironment{joblong}[2]
-{
+    {
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
     \textbf{#1} & \hfill &  #2 \\[3.75pt]
     \end{tabularx}
     \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-}
-{
+    }
+    {
     \end{itemize}
-    \end{minipage}
-}
+    \end{minipage}    
+    }
 
 
 
@@ -129,7 +129,7 @@
 \begin{document}
 
 % non-numbered pages
-    \pagestyle{empty}
+\pagestyle{empty} 
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -141,22 +141,22 @@
 % \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
 % \end{tabularx}
 
-    \begin{tabularx}{\linewidth}{@{} C @{}}
-        \Huge{Kimberly Prijadi} \\[7.5pt]
-        \href{https://github.com/frtheatelier}{\raisebox{-0.05\height}\faGithub\ frtheatelier} \ $|$ \
-        \href{https://linkedin.com/in/kimberlyprijadi}{\raisebox{-0.05\height}\faLinkedin\ kimberlyprijadi} \ $|$ \
-% \href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \
-        \href{mailto:prijadikimberly@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ prijadikimberly@gmail.com} \ $|$ \
-        \href{tel:+14377341859}{\raisebox{-0.05\height}\faMobile \ +1 (437) 734-1859} \\
-    \end{tabularx}
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Kimberly Prijadi} \\[7.5pt]
+\href{https://github.com/frtheatelier}{\raisebox{-0.05\height}\faGithub\ frtheatelier} \ $|$ \ 
+\href{https://linkedin.com/in/kimberlyprijadi}{\raisebox{-0.05\height}\faLinkedin\ kimberlyprijadi} \ $|$ \ 
+% \href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
+\href{mailto:prijadikimberly@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ prijadikimberly@gmail.com} \ $|$ \ 
+\href{tel:+14377341859}{\raisebox{-0.05\height}\faMobile \ +1 (437) 734-1859} \\
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
 
 %Interests/ Keywords/ Summary
-    \section{Summary}
-    I am a computer science student with a deep love for design and development. My main strengths lie in web design and development, and I seek opportunities to create interesting projects and develop my skills in frontend/backend development.
+\section{Summary}
+I am a computer science student with a deep love for design and development. My main strengths lie in web design and development, and I seek opportunities to create interesting projects and develop my skills in frontend/backend development.
 
 %Experience
 % \section{Work Experience}
@@ -174,23 +174,23 @@
 %----------------------------------------------------------------------------------------
 %	Qualifications
 %----------------------------------------------------------------------------------------
-    \section{Qualifications}
-    \begin{itemize}
-        \item Second-year student in the Computer Science Specialist program, also majoring in Mathematics and minoring in Philosophy at the University of Toronto
-        \item Excellent collaborative skills, demonstrated through a team hackathon project "Capybara Bash" and as an event planner of the event "Nourish and Recharge: Decorate a Tote-bag Over Lunch".
-        \item ~2 years in community engagement and leadership, particularly as a tour guide and mentor.
-        \item Solid understanding in HTML, CSS, and Javascript, showcased by a number of front-end side projects.
-        \item Practical back-end knowledge using PHP and MySQL, including building systems with user authentication and CRUD functionality.
-        \item Experience in rapid prototyping and game development using Godot 4.3 and JavaScript, showcasing teamwork and problem-solving in fast-paced environments.
-    \end{itemize}
+\section{Qualifications}
+\begin{itemize}
+    \item Second-year student in the Computer Science Specialist program, also majoring in Mathematics and minoring in Philosophy at the University of Toronto
+    \item Excellent collaborative skills, demonstrated through a team hackathon project "Capybara Bash" and as an event planner of the event "Nourish and Recharge: Decorate a Tote-bag Over Lunch".
+    \item ~2 years in community engagement and leadership, particularly as a tour guide and mentor.
+    \item Solid understanding in HTML, CSS, and Javascript, showcased by a number of front-end side projects.
+    \item Practical back-end knowledge using PHP and MySQL, including building systems with user authentication and CRUD functionality.
+    \item Experience in rapid prototyping and game development using Godot 4.3 and JavaScript, showcasing teamwork and problem-solving in fast-paced environments.
+\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-    \section{Education}
-    \begin{tabularx}{\linewidth}{@{}l X@{}}
-        2024 - present & Honors Bachelor of Science at \textbf{University of Toronto} \hfill \normalsize (GPA: 3.84/4.0) \\
-    \end{tabularx}
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    2024 - present & Honors Bachelor of Science at \textbf{University of Toronto} \hfill \normalsize (GPA: 3.84/4.0) \\
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
@@ -201,94 +201,159 @@
 %    Familiar  &  \normalsize{C++, GoLang, Laravel, Vue.js, Swift UI, Godot (GDScript)}\\
 %    Other  &  \normalsize{UI/UX design}\\
 %\end{tabularx}
-
+  
 %Projects
-    \section{Projects}
+\section{Projects}
 
-    \begin{tabularx}{\linewidth}{ @{}l r@{} }
-        \textbf{Personal site} & \hfill \href{https://frtheatelier.github.io/dashboard/}{Link to Page} \\[3.75pt]
-        \multicolumn{2}{@{}X@{}}{
-            Created a personal website with a clean and creative user interface using HTML, CSS, and Javascript to showcase various artistic works and programming projects
-        }  \\
-    \end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Personal site} & \hfill \href{https://frtheatelier.github.io/dashboard/}{Link to Page} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+    \begin{itemize}
+        \item Created a personal website with a clean and creative user interface using HTML, CSS, and Javascript to showcase various artistic works and programming projects
+        % \item Implemented responsive design principles to ensure optimal viewing across different devices and screen sizes
+        \item Integrated interactive elements and animations to enhance user engagement and experience
+        \item Deployed the website using GitHub Pages, ensuring easy access and sharing of my portfolio
+        % \item Continuously updated the site with new projects and artworks, reflecting my growth and learning journey
+        \item Utilized version control (Git) for efficient project management and collaboration
+        % \item Received positive feedback from peers and mentors on the design and functionality of the website
+        % \item Applied best practices in web development to ensure fast loading times and SEO optimization
+        % \item Ensured accessibility standards were met to provide an inclusive experience for all users
+        % \item Documented the development process and challenges faced, contributing to my learning and future reference
+    \end{itemize}
+}  \\
+\end{tabularx}
 
-    \begin{tabularx}{\linewidth}{ @{}l r@{} }
-        \textbf{Aléatoire: Varied Web Apps} & \hfill \href{https://frtheatelier.github.io/aleatoire/}{Link to Hub} \\[3.75pt]
-        \multicolumn{2}{@{}X@{}}{
-            \begin{itemize}
-                \item Built multiple web apps using JavaScript, jQuery, Vue, and Ajax to explore front-end technologies, including a calculator and Wikipedia article generator.
-                \item Created a math-based web tool to identify perfect numbers and their factors, enhancing user engagement with number theory.
-                \item Developed an interactive Caesar Cipher mini-game applying cryptographic concepts through JavaScript logic.
-            \end{itemize}
-        }  \\
-    \end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Aléatoire: Varied Web Apps} & \hfill \href{https://frtheatelier.github.io/aleatoire/}{Link to Hub} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+    \begin{itemize}
+        \item Built multiple web apps using JavaScript, jQuery, Vue, and Ajax to explore front-end technologies, including a calculator and Wikipedia article generator.
+        \item Created a math-based web tool to identify perfect numbers and their factors, enhancing user engagement with number theory.
+        \item Developed an interactive Caesar Cipher mini-game applying cryptographic concepts through JavaScript logic.
+        \item Designed a responsive and user-friendly interface for each app, ensuring accessibility across devices.
+        \item Hosted the apps on GitHub Pages, providing easy access and sharing capabilities.
+        \item Continuously updated and refined the apps based on personal learning goals.
+    \end{itemize}
+}  \\
+\end{tabularx}
 
-    \begin{tabularx}{\linewidth}{ @{}l r@{} }
-        \textbf{Restaurant menu and booking portal} & \hfill \href{https://puedeeducation.com/kimresto/index.php}{Link to Demo}\footnote{Demo login: username \texttt{vani}, password \texttt{12345}. No real data; for demonstration purposes only.} \\[3.75pt]
-        \multicolumn{2}{@{}X@{}}{
-            Developed a restaurant menu and booking system with login, CRUD functionality, and Bootstrap styling using PHP and MySQL as part of a web development course project; successfully published on the course website.
-        }  \\
-    \end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Restaurant menu and booking portal} & \hfill \href{https://puedeeducation.com/kimresto/index.php}{Link to Demo}\footnote{Demo login: username \texttt{vani}, password \texttt{12345}. No real data; for demonstration purposes only.} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+    \begin{itemize}
+        \item Developed a restaurant menu and booking system with login, CRUD functionality, and Bootstrap styling using PHP and MySQL as part of a web development course project; successfully published on the course website.
+        % \item Implemented user authentication and session management to ensure secure access to booking features.
+        \item Designed a responsive user interface with Bootstrap, enhancing user experience across devices.
+        \item Created an admin panel for managing menu items and bookings, streamlining restaurant operations.
+        \item Employed best practices in PHP and MySQL to ensure efficient database interactions and data integrity.
+        % \item Conducted thorough testing and debugging to ensure a smooth and reliable user experience.
+        \item Received positive feedback from instructors for functionality and design.
+    \end{itemize}
+}  \\
+\end{tabularx}
 
-    \begin{tabularx}{\linewidth}{ @{}l r@{} }
-        \textbf{Capybara Bash} & \hfill \href{https://github.com/harshshriv8man/Capybara-Bash-Game}{Link to Prototype} \\[3.75pt]
-        \multicolumn{2}{@{}X@{}}{
-            Collaborated in a team of three to design and develop a visually engaging 2D platformer game prototype featuring a capybara and moving platforms using Godot 4.3 to be presented to judges at IEEE's NewHacks 2024
-        }  \\
-    \end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Capybara Bash} & \hfill \href{https://github.com/harshshriv8man/Capybara-Bash-Game}{Link to Prototype} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+     \begin{itemize}
+        \item Collaborated in a team of three to design and develop a visually engaging 2D platformer game prototype featuring a capybara and moving platforms using Godot 4.3 to be presented to judges at IEEE's NewHacks 2024 Hackathon
+        \item Implemented core game mechanics including player movement, jumping, and collision detection, ensuring smooth gameplay and responsiveness
+        \item Implemented gameover and level completion conditions and results screen, enhancing user experience and game flow
+        % \item Integrated original pixel art assets for characters and environments, contributing to the game's unique aesthetic
+        \item Conducted playtesting sessions to gather feedback and iteratively improve game mechanics and level design
+    \end{itemize}
+    
+}  \\
+\end{tabularx}
 
 %Course Projects
-    \section{Course Projects}
+\section{Course Projects}
 
-    \begin{tabularx}{\linewidth}{ @{}l r@{} }
-        \textbf{"Where are my Items": a text-based adventure game} & \hfill \\[3.75pt]
-        \multicolumn{2}{@{}X@{}}{
-            \begin{itemize}
-                \item Developed a functional text-based adventure game in Python featuring three minigames, one puzzle, two easter-eggs, and additional interactive elements using appropriate data structures and coding practices
-                \item Authored comprehensive documentation including a game walkthrough, item and puzzle descriptions, and a reflective analysis of challenges and puzzle complexity
-            \end{itemize}
-        }  \\
-    \end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{"Where are my Items": a text-based adventure game} & \hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+    \begin{itemize}
+        \item Developed a functional text-based adventure game in Python featuring three minigames, one puzzle, two easter-eggs, and additional interactive elements using appropriate data structures and coding practices
+        \item Authored comprehensive documentation including a game walkthrough, item and puzzle descriptions, and a reflective analysis of challenges and puzzle complexity
+        \item Employed modular programming techniques to enhance code readability and maintainability
+        \item Implemented user input validation and error handling to ensure a smooth gaming experience
+        \item Utilized version control (Git) for efficient project management and collaboration
+        \item Conducted thorough testing to identify and resolve bugs, ensuring a polished final product
+        \item Submitted the project to the course TA for evaluation and feedback and received a grade of 100
+    \end{itemize}
+}  \\
+\end{tabularx}
 
-%Activities
-    \section{Activities}
+%Experiences
+\section{Experiences}
 
-    \begin{tabularx}{\linewidth}{ @{}l r@{} }
-        \textbf{PERMIKATO X VIP Toronto Buddy} & Sep 2025 - present\hfill \\[3.75pt]
-        \multicolumn{2}{@{}X@{}}{
-            \begin{itemize}
-                \item Mentored 2 first-year UofT students, initiating conversations and offering guidance on local resources and social events.
-                \item Answered questions about program applications and university life to support mentees’ transition.
-            \end{itemize}
-        }  \\
-    \end{tabularx}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{CSSA Graphic Design Associate} & Sep 2025 - present\hfill \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{
+%     \begin{itemize}
+%         \item Created visually appealing graphics for social media posts, event promotions, and newsletters using Adobe Photoshop and Canva, enhancing the club's online presence and engagement.
+%         \item Collaborated with the executive team to understand design requirements and deliver graphics that align with the club's branding and messaging.
+%         \item Managed multiple design projects simultaneously, ensuring timely delivery and high-quality output.
+%         \item Received positive feedback from club members and executives for creativity and professionalism in design work.
+%         % \item Stayed updated with design trends and tools to continuously improve skills and contribute fresh ideas to the club's visual content.
+%         % \item Assisted in organizing and promoting club events through effective graphic design, contributing to increased attendance and participation.
+%     \end{itemize}
+% }  \\
+% \end{tabularx}
 
-    \begin{tabularx}{\linewidth}{ @{}l r@{} }
-        \textbf{CSSU Orientation Leader} & Sep 2025\hfill \\[3.75pt]
-        \multicolumn{2}{@{}X@{}}{
-            \begin{itemize}
-                \item Led a scavenger hunt guiding 6 students, fostering engagement through collaborative poster design activities and finished in 3rd place.
-                \item Provided informative answers about course activities and opportunities, enhancing first-year students’ orientation experience.
-            \end{itemize}
-        }  \\
-    \end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{PERMIKATO X VIP Toronto Buddy} & Sep 2025 - present\hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+    \begin{itemize}
+        \item Mentored 2 first-year UofT students, initiating conversations and offering guidance on local resources and social events.
+        \item Answered questions about program applications and university life to support mentees’ transition.
+        \item Demonstrated strong interpersonal skills, fostering a supportive and inclusive environment for mentees.
+        % \item Coordinated meetups and activities to enhance mentees’ social integration and campus engagement.
+        \item Received positive feedback from mentees, highlighting the value of the mentorship experience.
+    \end{itemize}
+}  \\
+\end{tabularx}
 
-    \begin{tabularx}{\linewidth}{ @{}l r@{} }
-        \textbf{Event Coordinator} & Nov 2024 - Mar 2025\hfill \\[3.75pt]
-        \multicolumn{2}{@{}X@{}}{
-            \begin{itemize}
-                \item Organized and co-hosted "Nourish and Recharge: Decorate a Tote-bag Over Lunch" in collaboration with UofT’s Center of International Experience, successfully engaging ~40 attendees
-                \item Planned and delivered a short presentation on self-care and study strategies, fostering a warm and welcoming event atmosphere.
-            \end{itemize}
-        }  \\
-    \end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{CSSU Orientation Leader} & Sep 2025\hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+    \begin{itemize}
+        \item Led a scavenger hunt guiding 6 students, fostering engagement through collaborative poster design activities and finished in 3rd place.
+        \item Provided informative answers about course activities and opportunities, enhancing first-year students’ orientation experience.
+        \item Demonstrated strong leadership and communication skills, contributing to a positive and inclusive environment.
+        \item Collaborated with a co-leader to ensure smooth event execution and participant engagement.
+        \item Received positive feedback from participants, highlighting the effectiveness of the activities and guidance provided.
+    \end{itemize}
+}  \\
+\end{tabularx}
 
-    \begin{tabularx}{\linewidth}{ @{}l r@{} }
-        \textbf{Fall Campus Day Tour Guide} & Oct 2024\hfill \\[3.75pt]
-        \multicolumn{2}{@{}X@{}}{
-            Led tours for groups of 10+ prospective students and families around the Bahen Centre, sharing insights on first-year courses and student life while encouraging engagement; consistently delivered on-time tours and received positive feedback from participants.
-        }  \\
-    \end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Event Coordinator} & Nov 2024 - Mar 2025\hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+    \begin{itemize}
+        \item Organized and co-hosted "Nourish and Recharge: Decorate a Tote-bag Over Lunch" in collaboration with UofT’s Center of International Experience, successfully engaging ~40 attendees
+        \item Planned and delivered a short presentation on self-care and study strategies, fostering a warm and welcoming event atmosphere.
+        \item Coordinated logistics including material research within strict budget and event promotion throught reaching out to a professor and sharing the event to two student forums.
+        \item Managed event setup and cleanup, ensuring a smooth experience for all participants.
+        \item Received positive feedback from attendees, highlighting the event's success and impact.
+    \end{itemize}
+}  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Fall Campus Day Tour Guide} & Oct 2024\hfill \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+    \begin{itemize}
+        \item Led tours for groups of 10+ prospective students and families around the Bahen Centre, sharing insights on first-year courses and student life while encouraging engagement; consistently delivered on-time tours and received positive feedback from participants.
+        \item Coordinated with event organizers to ensure smooth tour operations and adherence to schedules.
+        \item Arrived early to prepare for tours, ensuring readiness and professionalism.
+        \item Answered quesitons about life on campus, academics, and extracurriculars, providing valuable information to prospective students.
+        \item Managed time effectively to cover all key locations within the allotted tour duration.
+        \item Demonstrated strong communication and interpersonal skills, fostering a welcoming atmosphere for visitors.
+        \item Adhered to university guidelines and safety protocols during tours.
+    \end{itemize}
+}  \\
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
@@ -299,7 +364,7 @@
 % \printbibliography[heading=none]
 % \end{refsection}
 
-    \vfill
-    \center{\footnotesize Last updated: \today}
+\vfill
+\center{\footnotesize Last updated: \today}
 
 \end{document}
