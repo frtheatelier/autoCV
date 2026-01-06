@@ -1,24 +1,52 @@
-%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Change the font size of your document - 10pt, 12.1pt, etc.
-\documentclass[letterpaper,10pt,oneside]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{setspace}
-% \usepackage{hyperref}
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
 
-\usepackage{graphicx}
-\graphicspath{ {images/}} %upload your signature to this file
-%Change the margins to fit your CV/resume content
-% \usepackage[left=1in, right=1in, bottom=1.25in, top=1.25in]{geometry}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
 
-%Skype information - include your Skype name for a link to add you on Skype
-\newcommand*{\Skype}{\href{skype:john.smith?add}{john.smith}} 
-\newcommand{\Absender}[1][\normalsize]{\Skype} 
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,10pt]{article} % set font size to be between 10 and 12
 
-%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
-\pagenumbering{gobble}
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
 
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
 
-% ------------- from autoCV
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
 \usepackage{url}
 \usepackage{parskip} 	
 
@@ -50,7 +78,7 @@
 
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
-\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
@@ -66,10 +94,42 @@
 %for social icons
 \usepackage{fontawesome5}
 
+%debug page outer frames
+%\usepackage{showframe}
 
-%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
 
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
 \begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -330,5 +390,7 @@ Computer Science student with hands-on experience building full-stack and fronte
 \textbf{English} (fluent), \textbf{Indonesian} (native)
 \end{tabularx}
 
-\end{document}
+\vfill
+% \center{\footnotesize Last updated: \today}
 
+\end{document}
